@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Not found</title>
+  <style>
+    :root {
+      --paper: #f3efe6;
+      --ink: #1c1915;
+      --muted: #6b645b;
+      --line: #d9d1c3;
+      --rust: #c4512c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, #fffaf2 0%, transparent 42%),
+        var(--paper);
+      font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    }
+
+    main {
+      width: min(36rem, 100%);
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .eyebrow {
+      margin-bottom: 1.25rem;
+      color: var(--rust);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 650;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(4.5rem, 14vw, 7.5rem);
+      font-weight: 500;
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+    }
+
+    .rule {
+      width: 4.5rem;
+      height: 2px;
+      margin: 1.75rem 0;
+      background: var(--ink);
+    }
+
+    .lead {
+      max-width: 28rem;
+      color: var(--muted);
+      font-size: 1.2rem;
+      line-height: 1.55;
+    }
+
+    footer {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Not found</p>
+    <h1>404.</h1>
+    <div class="rule"></div>
+    <p class="lead">This path does not match a page on the server.</p>
+    <footer>
+      <span>127.0.0.1:7878</span>
+      <span>static/404.html</span>
+    </footer>
+  </main>
+</body>
+</html>
